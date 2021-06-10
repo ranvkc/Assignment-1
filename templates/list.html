@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+      <header> <h1>1001898546 </h1>
+    <h1> Likith Vattigunta </h1>
+<br><br> </header>
+
+      </header>
+      <br> <br>
+      <table border="1">
+
+         {% for row in rows %}
+         <tr>
+            <td>name:{{row[0]}}</td>
+            <td>State:{{row[1]}}</td>
+            <td>Salary:{{row[2]}}</td>
+            <td>Grade: {{ row[3]}}</td>
+	    <td>room:{{row[4]}}</td>
+            <td>telno: {{ row[5]}}</td>
+            <td> <img src="static/{{row[6]}}" alt="NO Image available"></td> 
+            <td>Keywords:{{row[7]}}</td>
+           
+            <!-- <td>{{row['Keywords']}}</td> -->
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+      <a href="/">Home</a>
+   </body>
+</html>

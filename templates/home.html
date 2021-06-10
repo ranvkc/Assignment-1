@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+           body{
+               background: CadetBlue;
+           }
+        </style> 
+    </head>
+	<body>
+
+		<center>
+            <header> <h1>1001898546 </h1>
+                <h1> Likith Vattigunta </h1>
+            <br><br><br><br><br><br> </header>
+		<form method='POST' action="/list">
+            <h1> Selecting the attribute and displaying the image</h1>
+            <h3>Please select one of the following</h3> <select name="values" id="valuesTA">
+                <option value="name">Name</option>
+                <option value="state">state</option>
+                <option value="room">Room</option> 
+            </select><br><br>
+			<h3>Enter the value in the corresponding attribute:</h3><input type="text" name="value1" >
+			<input type="submit" ><br><br><br><br>
+		</form>
+        <form method='POST' action="/list1">
+            <h1>Displaying pictures based on grades and salaries</h1>
+            <h3>Please select one of the following</h3> <select name="valuesNum" id="valuesTANum">
+                <option value="grade">Grade</option>
+                <option value="salary">salary</option>
+            </select><br><br>
+        <h3>The entry should be between</h3> <input type="text" name="valuenum1" > <br> and <br><input type="text" name="valuenum2" > 
+			<input type="submit" >
+		</form><br><br><br>
+
+		 <form method="POST" action="/deleterecord" >
+            <h1>Deleting the records</h1>
+			<h3>Delete </h3><select name="valuesDEL" id="valuesDEL">
+                <option value="nameDEL">Name</option>
+                <option value="stateDEL">state</option>
+                <option value="roomDEL">Room</option>    
+            </select>  <br> 
+			 <h3>Entry</h3>:<input type="text" name="valueDEL" >
+			<input type="submit" >
+		 </form><br><br><br>
+
+         <form method="POST" action="/update" >
+            <h1>Modifying the records</h1>
+            <h3>Attribute you want to update:</h3>
+            <select name="valuesADD2" id="valuesADD2">
+                <option value="stateADD2">state</option>
+                <option value="keywordADD2">keyword</optin>
+                <option value="roomADD2">Room</option>
+                <option value="gradeADD2">Grade</optin>
+                <option value="imageADD2">Image</optin>    
+            </select> <br><br>
+            <h3>Entry to be modified  </h3>   <input type="text" name="valueADD1" > <br>
+             
+			
+            <h3>Updated value  </h3><input type="text" name="valueADD2" placeholder="Value to be updated">
+			<input type="submit" >
+		 </form>
+         </center>
+</body>
+	
+</html>

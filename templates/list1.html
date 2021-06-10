@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+      <header> <h1>1001898546 </h1>
+    <h1> Likith Vattigunta </h1>
+<br><br> </header>
+
+      </header>
+      <br> <br>
+      <table border="5">
+
+         {% for row in rows %}
+         <tr>
+            <td>name:{{row[0]}}</td>
+            <td> <img src="static/{{row[1]}}" alt="NO Image available"></td>           
+            <!-- <td>{{row['Keywords']}}</td> -->
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+      <a href="/">Home</a>
+   </body>
+</html>
